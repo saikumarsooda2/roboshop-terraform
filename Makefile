@@ -6,7 +6,7 @@ dev:
 dev-destroy:
 	@rm -rf .terraform
 	@terraform init
-	@terraform destroy -auto-approve -var-file = env-dev/main.tfvars
+	@terraform destroy -auto-approve -var-file=env-dev/main.tfvars
 
 prod:
 	@rm -rf .terraform
