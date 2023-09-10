@@ -3,7 +3,7 @@ dev:
 	@terraform init backend-config=env-prod/state.tfvars
 	@terraform apply -auto-approve -var-file=env-dev/main.tfvars
 
-dev-destroy:
+destroy:
 	@rm -rf .terraform
 	@terraform init
 	@terraform destroy -auto-approve -var-file=env-dev/main.tfvars
