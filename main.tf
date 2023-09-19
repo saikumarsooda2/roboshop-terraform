@@ -1,7 +1,7 @@
 module "instance" {
   for_each  = var.component
   source    = "git::https://github.com/saikumarsooda2/tf-module-app.git"
-  component = each.value["component"]
+  component = each.key
   env       = var.env
-  tags       = each.value["tags"]
+  tags      = each.value["tags"]
 }

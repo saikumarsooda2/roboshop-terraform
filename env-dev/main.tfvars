@@ -2,29 +2,29 @@ env = "dev"
 component = {
 
   frontend  = {
-    tags = { Monitor = "true"}
+    tags = { Monitor = "true" env = "dev" }
   }
   mongodb   = { env = "dev" }
   catalogue = {
-    tags = { Monitor = "true" }
+    tags = { Monitor = "true" env = "dev" }
   }
   redis     = { env= "dev" }
   user      = {
-    tags = { Monitor = "true" }
+    tags = { Monitor = "true" env = "dev"  }
   }
   cart      = {
-    tags = { Monitor = "true" }
+    tags = { Monitor = "true" env = "dev" }
   }
   mysql     = { env = "dev" }
 
   shipping  = {
-    tags = { Monitor = "true" }
+    tags = { Monitor = "true"env = "dev" }
   }
   payment   = {
-    tags = { Monitor = "true" }
+    tags = { Monitor = "true" env = "dev" }
   }
   rabbitmq  = { env= "dev" }
   dispatch  = {
-    tags = { Monitor = "true" }
+    tags = { Monitor = "true" env = "dev" }
   }
 }
