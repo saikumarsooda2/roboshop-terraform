@@ -1,6 +1,5 @@
-module "instance" {
-  for_each  = var.component
-  source    = "git::https://github.com/saikumarsooda2/tf-module-app.git"
-  component = each.key
-  env       = var.env
+module"vpc"{
+for_each = var.vpc
+  source = "git::https://github.com/saikumarsooda2/tf-aws-vpc.git"
+  cidr_block = each.value["cidr_block"]
 }
