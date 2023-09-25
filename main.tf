@@ -1,6 +1,6 @@
-module "vpc" {
+module "aws" {
   for_each = var.vpc
   source = "git::https://github.com/saikumarsooda2/tf-vpc.git"
-  vpc_cidr_block = each.value["cidr_block"]
+  cidr_block = each.value["cidr_block"]
   tags = var.tags
 }
