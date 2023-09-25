@@ -2,4 +2,4 @@ variable "component" {}
 variable "env" {}
 variable "vpc" {}
 variable "tags" {}
-variable "subnets" {}
+variable "web_cidr_block" {}
