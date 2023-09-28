@@ -7,3 +7,7 @@ module "vpc" {
   tags       = var.tags
   default_vpc = var.default_vpc
 }
+
+output "subnet_ids" {
+  value = "module.vpc"
+}
