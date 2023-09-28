@@ -15,11 +15,11 @@ component = {
 }
 
 tags = {
-  default = {
-    company = "revoult"
-    year    = "1999"
-    ratings = "fivestar"
-  }
+default = {
+  company = "revoult"
+  year = "1999"
+  ratings = "fivestar"
+ }
 }
 
 vpc = {
