@@ -11,3 +11,10 @@ module "vpc" {
 output "subnet_ids" {
   value = module.vpc
 }
+
+module "app-server" {
+  type = "t3.micro"
+  subnet_id = lookup(lookup(lookup(lookup(module.vpc, "main",null ), "subnet_ids", null), "app",null), "subnet_ids",null)[0]
+  vpc_id = lookup(lookup(module.vpc, main, null ), "vpc_id", null)
+
+}
