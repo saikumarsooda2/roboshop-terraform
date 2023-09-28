@@ -13,8 +13,11 @@ output "subnet_ids" {
 }
 
 module "app-server" {
+  source = "git::https://github.com/saikumarsooda2/tf-module-app.git"
   type = "t3.micro"
   subnet_id = lookup(lookup(lookup(lookup(module.vpc, "main",null ), "subnet_ids", null), "app",null), "subnet_ids",null)[0]
   vpc_id = lookup(lookup(module.vpc, main, null ), "vpc_id", null)
 
 }
+
+
