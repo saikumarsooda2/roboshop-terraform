@@ -35,4 +35,3 @@ vpc = {
 }
 
 
-default_vpc = "vpc-0306149b33f0b9407"
