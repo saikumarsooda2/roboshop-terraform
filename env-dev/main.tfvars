@@ -1,18 +1,19 @@
 env = "dev"
 component = {
 
-  frontend  = {}
-  mongodb   = {}
-  catalogue = {}
-  redis     = {}
-  user      = {}
-  cart      = {}
-  mysql     = {}
-  shipping  = {}
-  payment   = {}
-  rabbitmq  = {}
-  dispatch  = {}
-}
+
+    frontend  = {}
+    mongodb   = {}
+    catalogue = {}
+    redis     = {}
+    user      = {}
+    cart      = {}
+    mysql     = {}
+    shipping  = {}
+    payment   = {}
+    rabbitmq  = {}
+    dispatch  = {}
+  }
 
 #tags = {
 #  default = {
