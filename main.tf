@@ -34,7 +34,4 @@ type = "t3.large"
 
 module "instance" {
   source = "git::https://github.com/saikumarsooda2/tf-module-app.git"
-  subnet_id = var.subnet_id
-  vpc_id = var.vpc_id
-  type = var.type
 }
