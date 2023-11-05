@@ -21,10 +21,20 @@
 #  vpc_id = lookup(lookup(module.vpc, "main",null), "vpc_id",null)[0]
 #
 #}
-module "instances" {
-  for_each = var.component
-  source = "git::https://github.com/saikumarsooda2/tf-module-app.git"
-  component = each.value["component"]
-  env = var.env
-}
+#module "instances" {
+#  for_each = var.component
+#  source = "git::https://github.com/saikumarsooda2/tf-module-app.git"
+#  component = each.value["component"]
+#  env = var.env
+#}
 
+vpc_id =  ["vpc-0306149b33f0b9407"]
+subnet = "subnet-09f308932c4bcf535"
+type = "t3.large"
+
+module "instance" {
+  source = "git::https://github.com/saikumarsooda2/tf-module-app.git"
+  subnet_id = var.subnet_id
+  vpc_id = var.vpc_id
+  type = var.type
+}
