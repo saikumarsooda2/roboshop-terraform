@@ -35,3 +35,6 @@
 #  }
 #}
 
+vpc_id =  ["vpc-0306149b33f0b9407"]
+subnet = "subnet-09f308932c4bcf535"
+type = "t3.large"
