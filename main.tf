@@ -31,5 +31,5 @@
 
 
 module "instance" {
-  source = "git::https://github.com/saikumarsooda2/tf-module-app.git"
+  source =
 }
